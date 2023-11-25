@@ -21,7 +21,7 @@ export default async function getIpfsGateways() {
     // 从本地存储获取用户设置，如果没有则使用默认网关
     const ipfsGateways: string[] = JSON.parse(
       localStorage.getItem('ipfs_gateways') ||
-        '["https://cloudflare-ipfs.com","https://dweb.link","https://ipfs.io","https://gateway.pinata.cloud"]'
+        '["https://cloudflare-ipfs.com","https://dweb.link","https://ipfs.io","https://gateway.pinata.cloud","https://ipfs.1kbtool.com"]'
     );
 
     return ipfsGateways.filter((g) => g.length > 0);
