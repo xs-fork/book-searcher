@@ -1,32 +1,4 @@
 {
-  "en": {
-    "translation": {
-      "settings": {
-        "title": "Settings",
-        "index_dir": "Index directory",
-        "index_dir_help": "The directory where the index is stored.",
-        "index_dir_required": "The index directory is required",
-        "index_dir_browse": "Browse",
-        "ipfs_gateways": "IPFS Gateways",
-        "ipfs_gateways_help": "IPFS Gateways List, line break",
-        "cancel": "Cancel",
-        "save": "Save",
-        "success": "Setting Saved",
-        "indexing": {
-          "title": "Create index",
-          "raw_files": "Select CSV files",
-          "raw_files_help": "Choose csv files that contain the raw data.",
-          "raw_files_required": "The CSV files are required.",
-          "raw_files_browse": "Browse",
-          "compressor": "Compresser",
-          "compresser_help": "Specify index compressor: none, lz4, zstd. Default: none.",
-          "cancel": "Cancel",
-          "create": "Create",
-          "success": "Index Created"
-        }
-      }
-    }
-  },
   "zh-CN": {
     "translation": {
       "settings": {
@@ -55,6 +27,35 @@
       }
     }
   },
+  "en": {
+    "translation": {
+      "settings": {
+        "title": "Settings",
+        "index_dir": "Index directory",
+        "index_dir_help": "The directory where the index is stored.",
+        "index_dir_required": "The index directory is required",
+        "index_dir_browse": "Browse",
+        "ipfs_gateways": "IPFS Gateways",
+        "ipfs_gateways_help": "IPFS Gateways List, line break",
+        "cancel": "Cancel",
+        "save": "Save",
+        "success": "Setting Saved",
+        "indexing": {
+          "title": "Create index",
+          "raw_files": "Select CSV files",
+          "raw_files_help": "Choose csv files that contain the raw data.",
+          "raw_files_required": "The CSV files are required.",
+          "raw_files_browse": "Browse",
+          "compressor": "Compresser",
+          "compresser_help": "Specify index compressor: none, lz4, zstd. Default: none.",
+          "cancel": "Cancel",
+          "create": "Create",
+          "success": "Index Created"
+        }
+      }
+    }
+  },
+  
   "fr": {
     "translation": {
       "settings": {
