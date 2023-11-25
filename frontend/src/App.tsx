@@ -61,16 +61,8 @@ const App: React.FC = () => {
     <RootContext.Provider value={{ ipfsGateways, setIpfsGateways }}>
       <Flex direction="column" minH="100vh">
         <SkipNavLink>Skip to content</SkipNavLink>
-        <Header title="Book Searcher" onClick={() => setSearchComponentKey((key) => key + 1)}>
+        <Header title="24h Book Searcher" onClick={() => setSearchComponentKey((key) => key + 1)}>
           <HStack spacing={{ base: 1, md: 2 }}>
-            <IconButton
-              as={ExternalLink}
-              aria-label={t('nav.repository')}
-              title={t('nav.repository') ?? ''}
-              href={repository}
-              variant="ghost"
-              icon={<Icon as={FaGithub} boxSize={5} />}
-            />
             <LanguageSwitch />
             <ColorModeSwitch />
             <Suspense>
@@ -83,7 +75,7 @@ const App: React.FC = () => {
 
         <Spacer />
         <Footer>
-          <ExternalLink href={repository}>Book Searcher</ExternalLink> v{version} ©2023
+          <ExternalLink href="https://24hbook.com">24h Book Searcher</ExternalLink> v{version} ©2023
         </Footer>
       </Flex>
     </RootContext.Provider>
