@@ -88,7 +88,7 @@
         "sort_desc": "降序排序",
         "not_sorted": "未排序",
         "filter": "过滤",
-        "no_data": "无数据",
+        "no_data": "请输入关键词搜索",
         "first_page": "第一页",
         "last_page": "最后一页",
         "next_page": "下一页",
@@ -99,7 +99,7 @@
         "redirect2aa": "Anna's Archive"
       },
       "search": {
-        "complex": "复杂搜索"
+        "complex": "综合搜索 书名、作者、ISBN等"
       },
       "settings": {
         "title": "设置",
