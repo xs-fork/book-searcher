@@ -10,21 +10,14 @@ export default async function getIpfsGateways() {
     const api = await import('@tauri-apps/api/primitives');
     return await api.invoke('get_config').then((conf) => {
       const config = conf as TauriConfig;
-      const userGateways = config.ipfs_gateways;
-      
-      // 如果用户设置了网关，返回用户设置；否则返回默认网关
-      return userGateways && userGateways.length > 0
-        ? userGateways.filter((g) => g.length > 0)
-        : ['https://ipfs.1kbtool.com'];
+      return config.ipfs_gateways;
     });
   } else {
-    // 从本地存储获取用户设置，如果没有则使用默认网关
     const ipfsGateways: string[] = JSON.parse(
       localStorage.getItem('ipfs_gateways') ||
-        '["https://cloudflare-ipfs.com","https://dweb.link","https://ipfs.io","https://gateway.pinata.cloud","https://ipfs.1kbtool.com"]'
+        '["https://cloudflare-ipfs.com","https://dweb.link","https://ipfs.io","https://gateway.pinata.cloud"]'
     );
-
-    return ipfsGateways.filter((g) => g.length > 0);
+    return ipfsGateways;
   }
 }
 
