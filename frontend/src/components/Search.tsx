@@ -102,7 +102,7 @@ const Search: React.FC<SearchProps> = ({ setBooks, pagination, setPageCount, res
       spacing={{ base: 2, md: 4 }}
       px={{ base: 4, md: 8 }}
     >
-      <SearchInput
+      {/* <SearchInput
         icon={<Icon as={TbBook2} />}
         placeholder={t('book.title')}
         value={title}
@@ -139,7 +139,7 @@ const Search: React.FC<SearchProps> = ({ setBooks, pagination, setPageCount, res
         placeholder={t('book.isbn')}
         value={isbn}
         onChange={setISBN}
-      />
+      /> */}
       <GridItem colSpan={{ sm: 1, md: 2, lg: 3 }}>
         <SearchInput
           icon={<Icon as={TbReportSearch} />}
