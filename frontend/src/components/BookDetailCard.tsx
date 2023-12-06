@@ -214,7 +214,7 @@ const BookDetailView: React.FC<BookDetailViewProps> = ({ book }) => {
             <SimpleGrid columns={{ sm: 2, md: 3, lg: 4, xl: 5 }} spacing={{ base: 2, md: 4 }}>
               <IpfsDownloadButton book={book} onlyIcon={false}></IpfsDownloadButton>
 
-              {rootContext.ipfsGateways.map((gateway) => (
+              {/* {rootContext.ipfsGateways.map((gateway) => (
                 <Button
                   as={ExternalLink}
                   href={getDownloadLinkFromIPFS(gateway, book)}
@@ -223,7 +223,7 @@ const BookDetailView: React.FC<BookDetailViewProps> = ({ book }) => {
                 >
                   {gateway}
                 </Button>
-              ))}
+              ))} */}
             </SimpleGrid>
           ) : null}
         </CardFooter>

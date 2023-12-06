@@ -5,7 +5,8 @@ import fileDownload from 'js-file-download';
 import { t } from 'i18next';
 
 export default async function autoDownload(book: Book, toast: any, setDownloadProgress: any) {
-  const filename = `${book.title}_${book.author}.${book.extension}`;
+  const filename = `${book.title}_${book.author}_24hbook.com.${book.extension}`;
+
   toast({
     title: `${filename} ${t('download_start')}!`,
     status: 'info',
